@@ -2,7 +2,10 @@ import { useState } from 'react';
 import Student from './Student';
 
 function App() {
-    const [students, setStudents] = useState([]);
+    const [students, setStudents] = useState([
+        { name: 'Alice Smith', course: 'B.Tech CSE', college: 'ABC College' },
+        { name: 'Bob Johnson', course: 'BCA', college: 'XYZ University' }
+    ]);
     const [formData, setFormData] = useState({ name: '', course: '', college: '' });
     const [error, setError] = useState('');
 
@@ -26,15 +29,6 @@ function App() {
             <header className="header">
                 <h1>Student Profile</h1>
                 <p>React Component and Props Practical</p>
-                <div className="explanation">
-                    <h3>React Concepts Explained:</h3>
-                    <ul>
-                        <li><strong>React Component:</strong> A reusable, independent piece of the UI (like our Student card).</li>
-                        <li><strong>Props:</strong> Arguments passed into React components (how App passes data to Student).</li>
-                        <li><strong>Data Flow:</strong> The <code>App</code> manages state and passes data to each <code>Student</code> via props (e.g., <code>name={"{student.name}"}</code>).</li>
-                        <li><strong>Multiple Components:</strong> We use the <code>.map()</code> function to render a <code>Student</code> component for each item in the state array.</li>
-                    </ul>
-                </div>
             </header>
 
             <main className="main-content">

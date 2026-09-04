@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #4F46E5;
-  --primary-hover: #4338CA;
-  --bg-color: #F9FAFB;
-  --card-bg: #FFFFFF;
-  --text-main: #111827;
-  --text-muted: #6B7280;
-  --border-color: #E5E7EB;
-  --error-color: #EF4444;
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --error-color: #ef4444;
 }
 
 * {
@@ -48,35 +48,13 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.explanation {
-  background-color: #EFF6FF;
-  border-left: 4px solid var(--primary-color);
-  padding: 1rem 1.5rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.explanation h3 {
-  color: #1E3A8A;
-  margin-bottom: 0.5rem;
-}
-
-.explanation ul {
-  padding-left: 1.5rem;
-  color: #1E40AF;
-}
-
-.explanation li {
-  margin-bottom: 0.25rem;
-}
-
 .student-form {
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-bottom: 2rem;
+  border: 1px solid var(--border-color);
 }
 
 .form-group {
@@ -96,13 +74,15 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-main);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .form-group input:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
 .error-message {
